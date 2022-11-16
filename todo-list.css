@@ -1,0 +1,100 @@
+body{
+  display: flex;
+  background-color: #E0E0E0;
+  padding-top: 10px;
+}
+.container{
+  background-color: #fff;
+  min-width:450px;
+  padding-left: 25px;
+  padding-right: 15px;
+  
+}
+.header{
+  padding-top: 8px;
+  font-family:  sans-serif;
+ 
+}
+.list{
+  list-style: none;
+  padding-left: 0px;
+  
+}
+li{
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  counter-increment: start-counting;
+  font-family:'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+
+}
+li::before{
+  content:counter(start-counting);
+  background-color: rgb(113, 227, 189);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family:'Courier New', Courier, monospace;
+  color:#fff;
+
+}
+.value{
+  flex:8;
+}
+.click{
+  position: relative;
+  margin-left: 20px;
+  cursor: pointer;
+  
+}
+.click::before{
+  font-family: 'Font Awesome 6 free';
+  
+}
+.click.arrowUp::before{
+  content:'\f062';
+}
+.click.arrowDown::before{
+  content:'\f063';
+}
+.click.delete::before{
+  content:'\f2ed';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formCase{
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+
+
